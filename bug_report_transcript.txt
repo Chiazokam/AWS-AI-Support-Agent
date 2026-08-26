@@ -1,0 +1,22 @@
+you> My dashboard is broken
+bot> <thinking> The user's message indicates a potential bug report. I need to collect the required fields: a description of the bug, the steps to reproduce it, and the customer's environment. I will ask for the steps to reproduce the issue first. </thinking>
+
+[tool call] bugreports___create_bug_report
+<thinking> The user has not provided the steps to reproduce the issue, so I will ask for that information first. </thinking>
+Could you please provide the steps to reproduce the issue with your dashboard?
+
+you> Sign in to the app, then you land on the dashboard
+bot> <thinking> The user has provided the steps to reproduce the issue. I now need to ask for the customer's environment. </thinking>
+Thank you for providing the steps to reproduce the issue. Could you please provide your environment details, including the browser, operating system, and device you are using?
+
+you> MacOS, Chrome
+bot> <thinking> The user has now provided all three required fields: a description of the bug, the steps to reproduce it, and their environment. I can now call the `create_bug_report` tool with the collected information. </thinking>
+[tool call] bugreports___create_bug_report
+<thinking> The bug report has been successfully created. I will now inform the user and provide them with the ticket ID. </thinking>
+- Type of Request: BUG REPORT
+- Ticket Id: e634f738-b0b8-4360-9e7a-ccd74f709ace
+--------------------------------------------------------------
+- Description of bug: My dashboard is broken
+- Steps To reproduce: Sign in to the app, then you land on the dashboard
+- Your Environment: MacOS, Chrome
+Thank you for providing the necessary details. The engineering team will follow up on this issue.
