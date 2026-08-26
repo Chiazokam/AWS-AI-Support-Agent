@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "id": "t1_bug_report",
+      "prompt": "I need help with my subscription page",
+      "expected": "Acknowledges the user's request, classifies it as a bug report and asks the user for a clearer description of the bug"
+    },
+    {
+      "id": "t2_bug_report",
+      "prompt": "The forgot password page keeps loading",
+      "expected": "Acknowledges the user's request, classifies it as a bug report and asks the user for steps to reproduce the issue"
+    },
+    {
+      "id": "t3_platform_question",
+      "prompt": "I placed an order 2 weeks ago, but have still not gotten my package",
+      "expected": "Acknowledges the user's request, classifies it as a platform question and tells the user how to track the order"
+    },
+    {
+      "id": "t4_platform_question",
+      "prompt": "The item that got to me is not what I ordered",
+      "expected": "Acknowledges the user's request, classifies it as a platform question and tells the user to contact support with their order number and the items they want returned"
+    },
+    {
+      "id": "t5_anything_else",
+      "prompt": "Compare your company to Company B",
+      "expected": "Acknowledges the user's request, classifies it as anything else, tells the user that they can't help with that and refers them to the human support line"
+    },
+    {
+      "id": "t6_anything_else",
+      "prompt": "I want to work with your company",
+      "expected": "Acknowledges the user's request, classifies it as anything else, tells the user that they can't help with that and refers them to the human support line"
+    },
+    {
+      "id": "t7_in_between",
+      "prompt": "Can I request for a refund through the website?",
+      "expected": "Acknowledges the user's request, classifies it as a platform question, tells the user how to request a refund"
+    },
+    {
+      "id": "t8_ambiguous",
+      "prompt": "My dashboard is broken",
+      "expected": "Acknowledges the user's request, classifies it as a bug report, asks the user for a clearer description of the bug"
+    }
+  ]
+}
